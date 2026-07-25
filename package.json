@@ -1,0 +1,25 @@
+{
+  "name": "solidity",
+  "version": "2.0.0",
+  "description": "This dApp connects to Ethereum and Binance Smart Chain (BSC) using Web3, GitHub CLI, Node.js, and Google Cloud CLI. It integrates with the Unstoppable Domain: elparadisogonzalo.com, enabling decentralized identity, wallet resolution, and IPFS-hosted content.",
+  "homepage": "https://github.com/Koagonzalo/solidity#readme",
+  "bugs": {
+    "url": "https://github.com/Koagonzalo/solidity/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Koagonzalo/solidity.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "build": "mkdir -p build && cp index.js build/index.js && printf '{\\n  \"name\": \"solidity\",\\n  \"version\": \"2.0.0\",\\n  \"status\": \"built\"\\n}\\n' > build/manifest.json",
+    "publish": "npm run build && npm publish",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.elparadisogonzalo.com"
+  }
+}
